@@ -51,9 +51,9 @@ MyFunction_fn(one two)
 
 ## Results Summary
 
-- Included in `elm-optimize-level-2` tool\*\*
+- Included in `elm-optimize-level-2` tool
 - Potentially large positive effect on speed
-- Likley small but positive effect on asset size
+- Likely small but positive effect on asset size
 
 This has lead to dramatic speedups in some cases, especially when a large number of smaller functions are called and the overhead of calling twice as many functions is significant.
 
@@ -103,7 +103,7 @@ f_unwrapped(
 
 This transformation works with separately defined functions too.
 
-# Passing in Unwrappable Functions to Higher Order Functions
+## Results Summary
 
 **Future Work**
 
