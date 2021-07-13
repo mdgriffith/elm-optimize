@@ -448,9 +448,9 @@ function map(func, list) {
 }
 ```
 
-# Skip Allocating Tuples in Case Statements
+# Skip Allocating Tuples in Case Expression
 
-It's pretty common to put things in a tuple (or threeple) to start a case statement.
+It's pretty common to put things in a tuple (or threeple) to start a case expression.
 
 ```elm
     case (a, b) of
@@ -459,6 +459,8 @@ It's pretty common to put things in a tuple (or threeple) to start a case statem
 ```
 
 We could skip allocating the tuple though.
+
+**Note:** the elm compiler seems to already optimize this.
 
 # String Joining
 
